@@ -24,6 +24,6 @@ requests:
         name: cross-origin-opener-policy
         dsl:
           - "!regex('(?i)cross-origin-opener-policy', all_headers)"
-          - "status_code != 301 && status_code != 302"
+          - "status_code != 301 && status_code != 302 && status_code != 404"
         condition: and
 
